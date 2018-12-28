@@ -5,7 +5,6 @@
 # Each configuration section is defined by a name in square brackets (e.g. `[outputs]`).
 
 # TODO
-# - 1: Deploy site
 # - 2: Upload info about publications
 # - 3: Create pdf and html CV (get good md template)
 # - 4: Fill out about page

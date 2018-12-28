@@ -18,11 +18,11 @@ authors = ["Ballard, T.", "Vancouver, J. B.", "Neal, A."]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Psychological Science*"
+publication = "*Journal of Applied Psychology, 103,* 1242-1264"
 #publication_short = "In *ICMEW*"
 
 # Abstract and optional shortened version.
-abstract = "Much is known about the effects of reward and punishment on behavior, yet little research has considered how these incentives influence the information processing dynamics that underlie decision making. We fit the Linear Ballistic Accumulator model to data from a perceptual judgment task to examine the impacts of reward- and punishment-based incentives on three distinct components of information processing: the quality of the information processed, the quantity of that information, and the decision threshold. The threat of punishment lowered the average quality and quantity of information processed compared to the prospect of reward or no performance incentive at all. The threat of punishment also induced less cautious decision making by lowering people’s decision thresholds relative to the prospect of reward. These findings suggest that information processing dynamics are not wholly determined by objective properties of the decision environment, but also by the higher order goals of the system."
+abstract = "This article presents a theory of how people prioritize their time when pursuing goals with different deadlines. Although progress has been made in understanding the dynamics of multiple-goal pursuit, theory in this area only addresses cases where the goals have the same deadline. We rectify this issue by integrating the multiple-goal pursuit model—a formal theory of multiple goal pursuit—with theories of intertemporal motivation and choice. We examine the ability of four computational models derived from this general theory to account for participants’ choices across four experiments. The models make different assumptions about how people determine the valence of prioritizing a goal (i.e., by monitoring distance to goal or time pressure), and whether the goal is subject to temporal discounting. In each experiment, participants performed a task requiring them to pursue two goals. Experiments 1 and 2 manipulated deadline and distance; Experiment 3 manipulated deadline and time pressure; Experiment 4 manipulated all three factors. Counter to the predictions of existing theory, participants generally prioritized the goal with the shorter deadline. We also observed weak, but positive effects of distance on prioritization (Experiment 2) and nonlinear effects of time pressure (Experiment 3). The model that best explained participants’ decisions assumed that valence is determined by time pressure and the expected utility of a goal is subject to temporal discounting. This new model broadens the range of phenomena that can be accounted for within a single theory of multiple-goal pursuit, and improves our understanding of the interface between motivation and decision making."
 
 # Is this a selected publication? (true/false)
 selected = true
@@ -55,7 +55,7 @@ url_pdf = "content/publication/pursuit-multiple-goals/pursuit-multiple-goals.pdf
 url_custom = [{name = "Supplementary Materials", url = "https://osf.io/hdwyn/"}]
 
 # Digital Object Identifier (DOI)
-# doi = "10.1037/apl0000304"
+doi = "10.1037/apl0000304"
 
 # Does this page contain LaTeX math? (true/false)
 math = true
