@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A Tag on Tim Ballard</title>
+    <link>/tags/a-tag/</link>
+    <description>Recent content in A Tag on Tim Ballard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 02 Jul 2018 00:00:00 +1000</lastBuildDate>
+    
+	<atom:link href="/tags/a-tag/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On the pursuit of multiple goals with different deadlines</title>
+      <link>/publication/pursuit-multiple-goals/</link>
+      <pubDate>Mon, 02 Jul 2018 00:00:00 +1000</pubDate>
+      
+      <guid>/publication/pursuit-multiple-goals/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
