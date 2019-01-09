@@ -51,16 +51,6 @@
     </item>
     
     <item>
-      <title>ORM Paper - first meeting of year</title>
-      <link>/post/190109_dynamic_modelling/</link>
-      <pubDate>Wed, 09 Jan 2019 13:23:17 +1100</pubDate>
-      
-      <guid>/post/190109_dynamic_modelling/</guid>
-      <description>&lt;p&gt;Attendence: Andrew, Hector&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Information processing in the face of reward versus punishment</title>
       <link>/publication/information-processing-2019/</link>
       <pubDate>Mon, 24 Dec 2018 00:00:00 +1100</pubDate>
@@ -529,14 +519,15 @@ git submodule update --init --recursive
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>ORM Paper - first meeting of the year</title>
+      <link>/post/2019-01-09-orm-meeting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>/post/2019-01-09-orm-meeting/</guid>
       <description>
 
 
+&lt;p&gt;Attendees: Andrew, Hector&lt;/p&gt;
 &lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;R Markdown&lt;/h1&gt;
 &lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
@@ -570,7 +561,7 @@ pie(
   init.angle = -50, border = NA
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;/post/2019-01-09-orm-meeting_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: A fancy pie chart.
 &lt;/p&gt;

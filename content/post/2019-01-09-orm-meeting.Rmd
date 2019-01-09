@@ -1,6 +1,6 @@
 ---
 title: "ORM Paper - first meeting of the year"
-author: "Frida Gomam"
+author: "Tim Ballard"
 date: 2019-01-09 T21:13:14-05:00
 categories: []
 tags: ["dynamic modelling"]
@@ -10,7 +10,7 @@ tags: ["dynamic modelling"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-Attendees: Tim, Andrew, Hector
+Attendees: Andrew, Hector
 
 # R Markdown
 
