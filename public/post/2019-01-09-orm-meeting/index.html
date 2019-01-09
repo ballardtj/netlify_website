@@ -16,9 +16,10 @@
     
   
   <meta name="description" content="Attendees: Andrew, Hector
-R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.">
+#Items for discussion
+Finalising the model  Choose final model (need to pick which performance function works best).
+ Lower case greek letters for each parameter or should effort baseline, initial effort, initial goal be the word with some subscript?
+ Need to compare the models to simpler alternatives to establish necessity. Could we compare the models to alternatives where either effort or goal do not update at all?">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/2019-01-09-orm-meeting/">
@@ -100,9 +101,10 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
   <meta property="og:url" content="/post/2019-01-09-orm-meeting/">
   <meta property="og:title" content="ORM Paper - first meeting of the year | Tim Ballard">
   <meta property="og:description" content="Attendees: Andrew, Hector
-R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.">
+#Items for discussion
+Finalising the model  Choose final model (need to pick which performance function works best).
+ Lower case greek letters for each parameter or should effort baseline, initial effort, initial goal be the word with some subscript?
+ Need to compare the models to simpler alternatives to establish necessity. Could we compare the models to alternatives where either effort or goal do not update at all?">
   
   
     
@@ -383,44 +385,23 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 
 
 <p>Attendees: Andrew, Hector</p>
-<div id="r-markdown" class="section level1">
-<h1>R Markdown</h1>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932</code></pre>
+<p>#Items for discussion</p>
+<div id="finalising-the-model" class="section level3">
+<h3>Finalising the model</h3>
+<ul>
+<li><p>Choose final model (need to pick which performance function works best).</p></li>
+<li><p>Lower case greek letters for each parameter or should effort baseline, initial effort, initial goal be the word with some subscript?</p></li>
+<li><p>Need to compare the models to simpler alternatives to establish necessity. Could we compare the models to alternatives where either effort or goal do not update at all? Are these two simple? What other ones.</p></li>
+</ul>
 </div>
-<div id="including-plots" class="section level1">
-<h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
-<pre class="r"><code>par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
-  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
-  init.angle = -50, border = NA
-)</code></pre>
-<div class="figure"><span id="fig:pie"></span>
-<img src="/post/2019-01-09-orm-meeting_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
-<p class="caption">
-Figure 1: A fancy pie chart.
-</p>
-</div>
+<div id="finishing-the-paper" class="section level3">
+<h3>Finishing the paper</h3>
+<ul>
+<li><p>Where does the hierarchical structure fit in to the modeling? Does it go in Step 2 (Model fitting) or is it a 4th step that involves interpretting the model parameters. On the one hand, the hierarchical structure always needs to be a consideration for model fitting, but this might disrupt the flow of the paper.</p></li>
+<li><p>Do we need a recent grad student to look over paper?</p></li>
+<li><p>Hector to look over code and help with documentation?</p></li>
+<li><p>How do we bring Mark back in?</p></li>
+</ul>
 </div>
 
     </div>
