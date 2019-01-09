@@ -1,12 +1,9 @@
 ---
 title: "ORM Paper - first meeting of the year"
 author: "Tim Ballard"
-date: "2019-01-09 T21:13:14-05:00"
-output:
-  html: default
-  pdf_document: default
-tags: dynamic modelling
+date: 2019-01-09 T21:13:14-05:00
 categories: []
+tags: ["dynamic modelling"]
 ---
 
 ```{r setup, include=FALSE}
