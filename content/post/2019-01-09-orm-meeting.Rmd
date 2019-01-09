@@ -12,11 +12,13 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 Attendees: Andrew, Hector
 
-#Items for discussion
+# Items for discussion
 
 ### Finalising the model
 
  - Choose final model (need to pick which performance function works best).
+ 
+ - Which parameters to manipulate in simulation study?
 
  - Lower case greek letters for each parameter or should effort baseline, initial effort, initial goal be the word with some subscript?
  
