@@ -1,5 +1,5 @@
 +++
-title = "My Article Name"
+title = "ORM Paper - first meeting of year"
 date = 2019-01-09T13:23:17+11:00
 draft = false
 
@@ -29,3 +29,6 @@ categories = []
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = ""
 +++
+
+Attendence: Andrew, Hector
+
