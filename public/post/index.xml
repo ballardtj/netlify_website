@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>My Article Name</title>
+      <link>/post/190109_dynamic_modelling/</link>
+      <pubDate>Wed, 09 Jan 2019 13:23:17 +1100</pubDate>
+      
+      <guid>/post/190109_dynamic_modelling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Academic: the website designer for Hugo</title>
       <link>/post/getting-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>

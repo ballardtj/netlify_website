@@ -6,6 +6,16 @@
     
   
     
+  
+    
+    <url>
+    
+      <loc>/post/190109_dynamic_modelling/</loc>
+      <lastmod>2019-01-09T13:23:17+11:00</lastmod>
+    </url>
+    
+  
+    
     <url>
     
       <loc>/publication/information-processing-2019/</loc>
@@ -64,6 +74,14 @@
     
     <url>
     
+      <loc>/posts/</loc>
+      <lastmod>2017-01-01T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/publication/</loc>
       <lastmod>2017-01-01T00:00:00+11:00</lastmod>
     </url>
@@ -114,14 +132,6 @@
     
       <loc>/post/getting-started/</loc>
       <lastmod>2018-01-13T00:00:00+11:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/person-re-id/</loc>
-      <lastmod>2015-09-01T00:00:00+10:00</lastmod>
     </url>
     
   

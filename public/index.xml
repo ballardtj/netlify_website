@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>Recent Meetings</title>
+      <link>/posts/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
+      
+      <guid>/posts/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Teaching</title>
       <link>/tutorials/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
@@ -39,6 +48,15 @@
 &lt;li&gt;CS107: An intro to computer science&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>My Article Name</title>
+      <link>/post/190109_dynamic_modelling/</link>
+      <pubDate>Wed, 09 Jan 2019 13:23:17 +1100</pubDate>
+      
+      <guid>/post/190109_dynamic_modelling/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -506,16 +524,6 @@ git submodule update --init --recursive
 &lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-id/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +1000</pubDate>
-      
-      <guid>/publication/person-re-id/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
