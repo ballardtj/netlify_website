@@ -30,10 +30,10 @@ Follow our easy step by step guide to learn how to build your own free website w
       
       <guid>/post/2019-01-09-orm-meeting/</guid>
       <description>Attendees: Andrew, Hector
-Items for discussion Finalising the model  Choose final model (need to pick which performance function works best).
- Which parameters to manipulate in simulation study?
- Lower case greek letters for each parameter or should effort baseline, initial effort, initial goal be the word with some subscript?
- Need to compare the models to simpler alternatives to establish necessity. Could we compare the models to alternatives where either effort or goal do not update at all?</description>
+Items for discussion Finalising the model  Choose final model (need to pick which performance function works best).  Model 1: skill = 1 - exp(-delta*practice)
+ change_in_performance = (k1 + k2*skill) / (1 + exp(-(k3 + k4*effort + k5*skill)))  Comments: Regression look to this equation is not ideal.
+Model 2: skill = skill_max - (skill_max - skill_min)exp(-deltapractice)
+ performance = performance_a - (performance_a - performance_0)*exp(-delta*practice) change_in_performance = skill / (1 + exp(-(k1 + k2*effort))  Comments: This model does not influence the slope of the function, but that’s probably.</description>
     </item>
     
   </channel>

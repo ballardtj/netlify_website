@@ -1,9 +1,10 @@
 ---
 title: "ORM Paper - first meeting of the year"
 author: "Tim Ballard"
-date: 2019-01-09 T21:13:14-05:00
+date: "2019-01-09 T21:13:14-05:00"
+output: pdf_document
+tags: dynamic modelling
 categories: []
-tags: ["dynamic modelling"]
 ---
 
 ```{r setup, include=FALSE}
@@ -16,22 +17,64 @@ Attendees: Andrew, Hector
 
 ### Finalising the model
 
- - Choose final model (need to pick which performance function works best).
+ * Choose final model (need to pick which performance function works best).
  
- - Which parameters to manipulate in simulation study?
+    + Model 1: 
+          
+$$skill = 1 - e^{-\delta \times practice}$$
+          
+$$\delta_{performance} = \frac{k_1 + k_2 \times skill}{1 + e^{-(k_3 + k_4 \times effort + k_5 \times skill)}}$$
+    
+  *        
+    + Issues:
+    
+        - Model fits well, but looks too much like a regression equation.
+        
+        - Skill comes into the equation in multiple ways (i.e., it influences the intercept and slope). This may be required to reproduce the K & A figure, but is not parsimonious and not necessary to fit the data.
+          
+    + Model 2: 
+    
+$$skill = skill_{assymptote} - (skill_{assymptote} - skill_0)^{-\delta \times practice}$$
+ 
+$$\delta_{performance} = \frac{skill}{1 + e^{-(k_1 + k_2 \times effort)}}$$
+          
+  
+  * + Issues:
+  
+    - This model does not influence the slope of the function, but that's probably okay.
+    
+    - The CIs on the skill trajectory are very wide.
+  
+  * **Action: Tim to rerun with more constrained priors. Check to see if the credible interval on skill has narrowed.**
+ 
+ * Which parameters to manipulate in simulation study?
+ 
+    + _not discussed_ 
 
- - Lower case greek letters for each parameter or should effort baseline, initial effort, initial goal be the word with some subscript?
+ * Lower case greek letters for each parameter or should effort baseline, initial effort, initial goal be the word with some subscript?
  
- - Need to compare the models to simpler alternatives to establish necessity. Could we compare the models to alternatives where either effort or goal do not update at all? Are these two simple? What other ones.
+    + _not discussed_ 
+ 
+ * Need to compare the models to simpler alternatives to establish necessity. Could we compare the models to alternatives where either effort or goal do not update at all? Are these two simple? What other ones.
+ 
+    + **Action: Tim to try to implement linear models of the observed variables as alternative models. Demonstrates that the mechanism is more complex than a simple linear model, also demonstrates that people can use this method to implement linear models as well.**
  
 ### Finishing the paper
 
- - Where does the hierarchical structure fit in to the modeling? Does it go in Step 2 (Model fitting) or is it a 4th step that involves interpretting the model parameters. On the one hand, the hierarchical structure always needs to be a consideration for model fitting, but this might disrupt the flow of the paper.
+ * Where does the hierarchical structure fit in to the modeling? Does it go in Step 2 (Model fitting) or is it a 4th step that involves interpretting the model parameters. On the one hand, the hierarchical structure always needs to be a consideration for model fitting, but this might disrupt the flow of the paper.
+ 
+    + **Action: Include section on model structure and parameter interpretation after model comparisons. The idea is that one might want to interpret the model parameters and to do this the researcher must consider how these parameters are implemented in the model. Figures from original version with distributions and individual differences.**
 
- - Do we need a recent grad student to look over paper?
+ * Do we need a recent grad student to look over paper?
+
+    + _not discussed_ 
  
- - Hector to look over code and help with documentation?
+ * Hector to look over code and help with documentation?
  
- - How do we bring Mark back in?
+    + **Action: Tim to prepare code for Hector over next few working days and let Hector know when it is ready. Hector to go through and make sure documentation is accessible.**
+ 
+ * How do we bring Mark back in?
+ 
+    + **Action: Tim to email Mark (and Andrew and Hector) asking if Mark can look over first three sections. Andrew to look over document after Mark.**
 
  

@@ -1,9 +1,10 @@
 ---
 title: "ORM Paper - first meeting of the year"
 author: "Tim Ballard"
-date: 2019-01-09 T21:13:14-05:00
+date: "2019-01-09 T21:13:14-05:00"
+output: pdf_document
+tags: dynamic modelling
 categories: []
-tags: ["dynamic modelling"]
 ---
 
 
@@ -14,19 +15,65 @@ tags: ["dynamic modelling"]
 <div id="finalising-the-model" class="section level3">
 <h3>Finalising the model</h3>
 <ul>
-<li><p>Choose final model (need to pick which performance function works best).</p></li>
-<li><p>Which parameters to manipulate in simulation study?</p></li>
-<li><p>Lower case greek letters for each parameter or should effort baseline, initial effort, initial goal be the word with some subscript?</p></li>
-<li><p>Need to compare the models to simpler alternatives to establish necessity. Could we compare the models to alternatives where either effort or goal do not update at all? Are these two simple? What other ones.</p></li>
+<li><p>Choose final model (need to pick which performance function works best).</p>
+<ul>
+<li>Model 1:</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[skill = 1 - e^{-\delta \times practice}\]</span></p>
+<p><span class="math display">\[\delta_{performance} = \frac{k_1 + k_2 \times skill}{1 + e^{-(k_3 + k_4 \times effort + k_5 \times skill)}}\]</span></p>
+<ul>
+<li><ul>
+<li><p>Issues:</p>
+<ul>
+<li><p>Model fits well, but looks too much like a regression equation.</p></li>
+<li><p>Skill comes into the equation in multiple ways (i.e., it influences the intercept and slope). This may be required to reproduce the K &amp; A figure, but is not parsimonious and not necessary to fit the data.</p></li>
+</ul></li>
+<li><p>Model 2:</p></li>
+</ul></li>
+</ul>
+<p><span class="math display">\[skill = skill_{assymptote} - (skill_{assymptote} - skill_0)^{-\delta \times practice}\]</span></p>
+<p><span class="math display">\[\delta_{performance} = \frac{skill}{1 + e^{-(k_1 + k_2 \times effort)}}\]</span></p>
+<ul>
+<li><ul>
+<li><p>Issues:</p></li>
+<li><p>This model does not influence the slope of the function, but that’s probably okay.</p></li>
+<li><p>The CIs on the skill trajectory are very wide.</p></li>
+</ul></li>
+<li><p><strong>Action: Tim to rerun with more constrained priors. Check to see if the credible interval on skill has narrowed.</strong></p></li>
+<li><p>Which parameters to manipulate in simulation study?</p>
+<ul>
+<li><em>not discussed</em></li>
+</ul></li>
+<li><p>Lower case greek letters for each parameter or should effort baseline, initial effort, initial goal be the word with some subscript?</p>
+<ul>
+<li><em>not discussed</em></li>
+</ul></li>
+<li><p>Need to compare the models to simpler alternatives to establish necessity. Could we compare the models to alternatives where either effort or goal do not update at all? Are these two simple? What other ones.</p>
+<ul>
+<li><strong>Action: Tim to try to implement linear models of the observed variables as alternative models. Demonstrates that the mechanism is more complex than a simple linear model, also demonstrates that people can use this method to implement linear models as well.</strong></li>
+</ul></li>
 </ul>
 </div>
 <div id="finishing-the-paper" class="section level3">
 <h3>Finishing the paper</h3>
 <ul>
-<li><p>Where does the hierarchical structure fit in to the modeling? Does it go in Step 2 (Model fitting) or is it a 4th step that involves interpretting the model parameters. On the one hand, the hierarchical structure always needs to be a consideration for model fitting, but this might disrupt the flow of the paper.</p></li>
-<li><p>Do we need a recent grad student to look over paper?</p></li>
-<li><p>Hector to look over code and help with documentation?</p></li>
-<li><p>How do we bring Mark back in?</p></li>
+<li><p>Where does the hierarchical structure fit in to the modeling? Does it go in Step 2 (Model fitting) or is it a 4th step that involves interpretting the model parameters. On the one hand, the hierarchical structure always needs to be a consideration for model fitting, but this might disrupt the flow of the paper.</p>
+<ul>
+<li><strong>Action: Include section on model structure and parameter interpretation after model comparisons. The idea is that one might want to interpret the model parameters and to do this the researcher must consider how these parameters are implemented in the model. Figures from original version with distributions and individual differences.</strong></li>
+</ul></li>
+<li><p>Do we need a recent grad student to look over paper?</p>
+<ul>
+<li><em>not discussed</em></li>
+</ul></li>
+<li><p>Hector to look over code and help with documentation?</p>
+<ul>
+<li><strong>Action: Tim to prepare code for Hector over next few working days and let Hector know when it is ready. Hector to go through and make sure documentation is accessible.</strong></li>
+</ul></li>
+<li><p>How do we bring Mark back in?</p>
+<ul>
+<li><strong>Action: Tim to email Mark (and Andrew and Hector) asking if Mark can look over first three sections. Andrew to look over document after Mark.</strong></li>
+</ul></li>
 </ul>
 </div>
 </div>

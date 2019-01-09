@@ -533,16 +533,33 @@ git submodule update --init --recursive
 &lt;div id=&#34;finalising-the-model&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Finalising the model&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Choose final model (need to pick which performance function works best).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Choose final model (need to pick which performance function works best).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Model 1: skill = 1 - exp(-delta*practice)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;      change_in_performance = (k1 + k2*skill) / (1 + exp(-(k3 + k4*effort + k5*skill)))
+      &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Comments: Regression look to this equation is not ideal.&lt;/p&gt;
+&lt;p&gt;Model 2: skill = skill_max - (skill_max - skill_min)&lt;em&gt;exp(-delta&lt;/em&gt;practice)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;      performance = performance_a - (performance_a - performance_0)*exp(-delta*practice)
+
+      change_in_performance = skill / (1 + exp(-(k1 + k2*effort))
+      &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Comments: This model does not influence the slope of the function, but that’s probably.&lt;/p&gt;
+&lt;p&gt;Action: Tim to rerun with more constrained priors. Check to see if the credible interval on skill has narrowed.&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Which parameters to manipulate in simulation study?&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Lower case greek letters for each parameter or should effort baseline, initial effort, initial goal be the word with some subscript?&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Need to compare the models to simpler alternatives to establish necessity. Could we compare the models to alternatives where either effort or goal do not update at all? Are these two simple? What other ones.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Comments: Try to implement linear models of the observed variables as alternative models. Demonstrates that the mechanism is more complex than a simple linear model, also demonstrates that people can use this method to implement linear models as well.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;finishing-the-paper&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Finishing the paper&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Where does the hierarchical structure fit in to the modeling? Does it go in Step 2 (Model fitting) or is it a 4th step that involves interpretting the model parameters. On the one hand, the hierarchical structure always needs to be a consideration for model fitting, but this might disrupt the flow of the paper.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Where does the hierarchical structure fit in to the modeling? Does it go in Step 2 (Model fitting) or is it a 4th step that involves interpretting the model parameters. On the one hand, the hierarchical structure always needs to be a consideration for model fitting, but this might disrupt the flow of the paper.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Comments: Include section on model structure and parameter interpretation after model comparisons. The idea is that one might want to interpret the model parameters and to do this the researcher must consider how these parameters are implemented in the model. Figures from original version with distributions and individual differences.&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Do we need a recent grad student to look over paper?&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Hector to look over code and help with documentation?&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;How do we bring Mark back in?&lt;/p&gt;&lt;/li&gt;

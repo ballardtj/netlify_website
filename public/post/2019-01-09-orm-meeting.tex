@@ -1,0 +1,239 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={ORM Paper - first meeting of the year},
+            pdfauthor={Tim Ballard},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{ORM Paper - first meeting of the year}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Tim Ballard}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019-01-09 T21:13:14-05:00}
+
+
+\begin{document}
+\maketitle
+
+Attendees: Andrew, Hector
+
+\hypertarget{items-for-discussion}{%
+\section{Items for discussion}\label{items-for-discussion}}
+
+\hypertarget{finalising-the-model}{%
+\subsubsection{Finalising the model}\label{finalising-the-model}}
+
+\begin{itemize}
+\item
+  Choose final model (need to pick which performance function works
+  best).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Model 1:
+  \end{itemize}
+\end{itemize}
+
+\[skill = 1 - e^{-\delta \times practice}\]
+
+\[\delta_{performance} = \frac{k_1 + k_2 \times skill}{1 + e^{-(k_3 + k_4 \times effort + k_5 \times skill)}}\]
+
+\begin{itemize}
+\item
+  \begin{itemize}
+  \item
+    Issues:
+
+    \begin{itemize}
+    \item
+      Model fits well, but looks too much like a regression equation.
+    \item
+      Skill comes into the equation in multiple ways (i.e., it
+      influences the intercept and slope). This may be required to
+      reproduce the K \& A figure, but is not parsimonious and not
+      necessary to fit the data.
+    \end{itemize}
+  \item
+    Model 2:
+  \end{itemize}
+\end{itemize}
+
+\[skill = skill_{assymptote} - (skill_{assymptote} - skill_0)^{-\delta \times practice}\]
+
+\[\delta_{performance} = \frac{skill}{1 + e^{-(k_1 + k_2 \times effort)}}\]
+
+\begin{itemize}
+\item
+  \begin{itemize}
+  \item
+    Issues:
+  \item
+    This model does not influence the slope of the function, but that's
+    probably okay.
+  \item
+    The CIs on the skill trajectory are very wide.
+  \end{itemize}
+\item
+  \textbf{Action: Tim to rerun with more constrained priors. Check to
+  see if the credible interval on skill has narrowed.}
+\item
+  Which parameters to manipulate in simulation study?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{not discussed}
+  \end{itemize}
+\item
+  Lower case greek letters for each parameter or should effort baseline,
+  initial effort, initial goal be the word with some subscript?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{not discussed}
+  \end{itemize}
+\item
+  Need to compare the models to simpler alternatives to establish
+  necessity. Could we compare the models to alternatives where either
+  effort or goal do not update at all? Are these two simple? What other
+  ones.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Action: Tim to try to implement linear models of the
+    observed variables as alternative models. Demonstrates that the
+    mechanism is more complex than a simple linear model, also
+    demonstrates that people can use this method to implement linear
+    models as well.}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{finishing-the-paper}{%
+\subsubsection{Finishing the paper}\label{finishing-the-paper}}
+
+\begin{itemize}
+\item
+  Where does the hierarchical structure fit in to the modeling? Does it
+  go in Step 2 (Model fitting) or is it a 4th step that involves
+  interpretting the model parameters. On the one hand, the hierarchical
+  structure always needs to be a consideration for model fitting, but
+  this might disrupt the flow of the paper.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Action: Include section on model structure and parameter
+    interpretation after model comparisons. The idea is that one might
+    want to interpret the model parameters and to do this the researcher
+    must consider how these parameters are implemented in the model.
+    Figures from original version with distributions and individual
+    differences.}
+  \end{itemize}
+\item
+  Do we need a recent grad student to look over paper?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{not discussed}
+  \end{itemize}
+\item
+  Hector to look over code and help with documentation?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Action: Tim to prepare code for Hector over next few working
+    days and let Hector know when it is ready. Hector to go through and
+    make sure documentation is accessible.}
+  \end{itemize}
+\item
+  How do we bring Mark back in?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Action: Tim to email Mark (and Andrew and Hector) asking if
+    Mark can look over first three sections. Andrew to look over
+    document after Mark.}
+  \end{itemize}
+\end{itemize}
+
+
+\end{document}
