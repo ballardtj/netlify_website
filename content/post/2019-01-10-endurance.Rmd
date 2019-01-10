@@ -1,0 +1,33 @@
+---
+title: "Endurance skype meeting"
+author: "Tim Ballard"
+date: 2019-01-10 T21:13:14-05:00
+categories: []
+tags: ["endurance"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+Attendees: Michael
+
+# Planning 
+
+* Final full report due 13 May. Draft report due in 25 March.
+
+* What is the final deliverable?
+
+  + Simulation script so that someone who is familiar with R can play with the model.
+  
+  + Shiny App that can take as input the shift times and predict fatigue and sleep times and fatigue.
+  
+    - Intermediary version where the user has to specify when the expected sleep and         wake times are. Or the expected sleep and wake times could be informed       empirically. However, this would not work when predicting new watches because there would be no empirical experience to draw on.
+    
+    - Final version where model predicts sleep times. We might have to fit to both fatigue ratings and sleep times to achieve this. Or we could use the existing model and predict sleep based on the three process model rule.
+    
+# Next Steps
+
+* **Action: Tim and Michael to meet with Sam to scope out what would be most useful for the final deliverable. **
+
+
