@@ -1,0 +1,45 @@
+---
+title: "IAMD Meeting"
+author: "Tim Ballard"
+date: 2019-01-18 T21:13:14-05:00
+categories: []
+tags: ["IAMD"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+Attendees: Andrew, Hector, Tim, Simon, Kingsley, Susan
+
+# Update on modeling
+
+* Small discrepancy in modelling where Kingsley had attention weights for weapon goal set to 0 and 1, whereas Hector had attention weights set to 1 and 1.
+
+* Hector: Preference accumulation does not resemble a sequential sampling process.
+
+* **Action: Simon to work through Hector's code in order to get his head around it and check for any errors. **
+
+# Next step is to develop distributed model where platforms act independently.
+
+* Multiple ways a distributed model could be distinguished from a centralised model.
+
+  * In distributed model, ships might become aware of threats recognised or actions taken by other ships only after a lag.
+
+  * In distributed model, inividuals decision makers might be able to process information more     quickly, because they are processing less information.
+
+  * In distributed model, decision makers might anticipate the actions of other decision makers.
+
+* Implication is that the distributed model has _conflicts_, whereby multiple ships might fire on the same threat, or multiple ships might expect the other ship to fire on a threat resulting in neither platform firing.
+
+* **Action: Hector and Simon to close the loop and implement the full simulation where actions have effects and the environments updates. Introduce lag between when action is taken and when the consequence occurs. **
+
+* **Action: Create descentalised version of the model which has two lags: 1) Lag in becoming aware of action of other (action lag), 2) lag in becoming aware of threats recognized by other (link-transfer delay, sensor lag) **
+
+# Next meeting: 29 Jan 2019, 11am (Brisbane time)
+
+* Item for next meeting: Ideas for extending project
+
+
+
+

@@ -1,0 +1,49 @@
+---
+title: "Endurance skype meeting"
+author: "Tim Ballard"
+date: 2019-01-18 T21:13:14-05:00
+categories: []
+tags: ["endurance"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Michael, Sam
+
+* Recap of November report
+
+* Simulations assume that everyone sleeps 8 hours per night. This assumption is likely not valid.
+
+* Sam: Goal is to have a tool that is like SAFTE-FAST, but reflects long term cumulative aspects, and is sensitive to workload.
+
+  * SAFTE-FAST predicts that a rolling non-circadian model is good, when it actually isn't.
+  
+  * SAFTE-FAST isn't validated at sea, black-box, doesn't look at cumulative fatigue, can't manipulate it
+  
+* Sam: prefer a tool rather than a series of written up simulations.
+
+* Mission length, workload, watch structure, change in watch structure, impact of crises (e.g., when people stop sleeping for a long time), sleep quality, breaking up of sleep
+
+* Interesting to have a theoretically perfect model, what's the max performance that can be expected in this scenario.
+
+* Still on agenda to compare our model to SAFTE-FAST. 
+
+* **Action: Sam to get Michael a copy of SAFTE-FAST. **
+
+* Next six months:
+
+  * Develop a software tool that can generate model predictions regarding fatigue, that allows us to manipulate the parameters above. Deliverable will be the software itself with practical demonstration and documentation, sensitivity analysis from within the tool itself.
+  
+  * Michael to focus on shiny app, Tim to focus on simulations that are under the hood.
+  
+* Next steps:
+
+  * **Action: Michael to incorporate workload and underload ratings into dataset for modelling. **
+  
+  * **Action: Tim to construct and run the workload version of the model. **
+
+
+
+

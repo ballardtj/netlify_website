@@ -1,0 +1,42 @@
+---
+title: "Leadership categorisation meeting"
+author: "Tim Ballard"
+date: 2019-01-18
+categories: []
+tags: ["leadership"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Dave, Nik, Tim
+
+* Dave's Recap of methods and results
+
+  * 80 face stimuli presented to participants, 100 people saw each of those 80. Each participant saw 9 faces,      approximately 80/9 * 100 participants.
+  
+  * Each participant responded to several questions regarding that person. These were collapsed into 8 items: embodying, advancing, creating, embedding, authentic, competent, identify, and effective (focal DV).
+  
+  * Overarching goal of the modelling is to understand how people, given that they know how competent a leader is, how they infer how effective a president the person will be. Specifically, what information do they use to make that induction? 
+
+    * Step 1: Stimulus is presented to the person. Stimulus has 8 feature values (based on average of 8 items). Decision maker evaluates similarity between face stimulus to other 79 stimulus faces based on 6 features (everything except competence and effectiveness). Some features may more strongly influence similarity ratings than others.
+    
+    * Step 2: Decision maker considers competence of other 79 examplars, weighted by similarity. Summed similarity determines perceieved presidential effectiveness of that stimuli. To the extent that you're similar to highly competent leaders, you'll probably be a good president.
+    
+    * Step 3: Probability of categorizing face stimulus as an effective president is determined based on percieved presidential effectiveness.
+    
+  * Results: People did not care about embodying, creating, and authentic dimensions when comparing face stimuli to other examples. These dimensions do not affect people's judgements regarding the similarity between face stimuli and other examples.
+  
+  * Alternative analysis using presidential effectiveness to predict general competence revealed similar pattern, except people cared a bit more about authenticity.
+  
+  * Similar results to above when competence grouping is used to predict competence.
+  
+* High level stuff
+
+  * We've decided to leave this as a single-study paper. Bringing computational modeling to new areas can require somewhat lengthy introductions and we don't want the paper to blow out in complexity.
+  
+  * Can we tease out the moderating role of identity?
+  
+  * We need to flesh out a pitch that communicates the value of cognitive modelling for understanding leadership. Provides a theory of the underlying psychological process that determines leadership effectiveness judgements. 
+
