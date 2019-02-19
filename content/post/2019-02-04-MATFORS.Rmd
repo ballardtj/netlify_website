@@ -1,0 +1,30 @@
+---
+title: "MATFORS meeting"
+author: "Tim Ballard"
+date: 2019-02-04 T21:13:14-05:00
+categories: []
+tags: ["matfors"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Nik, Tim
+
+* Sessions
+  * Theory (Nik)
+  * Intro to R (Tim)
+  * OSF, Pre-reg (Nik)
+  * Intermediate R (Tim)
+  * Systematic lit review and meta-analysis (Nik)
+  * Intermediate R II (Tim)
+  * Replications & Open Collaboration (Nik)
+  * Bayesian (Tim)
+  * Computational Modelling (Tim)
+  * Panel Discussion on how to do good research
+  
+* Tim to Book rooms for 9-12pm each day. For 40 people.
+* Nik to set up event bright
+* Once those are done, we can email the students.
+  

@@ -1,0 +1,28 @@
+---
+title: "DDAP Lab meeting"
+author: "Tim Ballard"
+date: 2019-01-30
+categories: []
+tags: ["andrew morgan"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Andrew Morgan, Andrew Neal, Erin, Tim
+
+* Andrew Morgan
+  * Still waiting to hear back from ethics (Andrew to follow-up)
+  * Opted to use qualtrics with manual keywords as unique identifiers.
+  
+* Erin
+  * Task programming still ongoing. Questions over timeframe.
+  * Should we get a quote from Andrew Heathcote's programmer?
+    * Erin to do up specification 
+
+* Next meeting: 30th Jan, 1pm
+ 
+ 
+  
+

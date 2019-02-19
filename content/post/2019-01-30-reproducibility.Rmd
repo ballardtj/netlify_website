@@ -1,0 +1,26 @@
+---
+title: "Reproducibility project meeting"
+author: "Tim Ballard"
+date: 2019-01-30 T21:13:14-05:00
+categories: []
+tags: ["reproducibility"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Raine, Niky, Tim
+* Apologies: Dave
+
+* Niky edit's to Method good.
+* Raine edits to Intro good. More in progress.
+
+* Possible outlets:
+  * Advances in methods and practices in psychological science
+  * Meta-psychology
+  
+* Next steps:
+  * Raine to continue editing
+  * Niky to think about methods, find registered reports from AMPPS.
+

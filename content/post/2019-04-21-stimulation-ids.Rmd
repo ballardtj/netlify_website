@@ -1,0 +1,28 @@
+---
+title: "Stimulation IDs meeting"
+author: "Tim Ballard"
+date: 2019-02-04
+categories: []
+tags: ["brain stimulation"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees:Hannah Filmer, Tim
+
+*Agenda:
+
+* Tim to calculate Bayes factors for effects.
+
+* Run a model with just GABA and Glutamate - 
+
+* Reviewed model. Model might not be specified properly. ID variables should predict __difference__ in pre-post change between stimulation and sham conditions. Currently, it predicts pre-post change seperately, and then we take the difference between those coefficients. 
+  * Model should predict __disruption__ which is calculated by first calculating change from pre-post in each stimulation condition, then taking the difference between those between active and sham. End up with two disruptions: and one for cathodal.
+  
+  * Tim to run model with polynomial regression terms.
+  * Add PFC white matter. (hannag to send me)
+ 
+  
+

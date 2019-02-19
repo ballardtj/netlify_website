@@ -1,0 +1,42 @@
+---
+title: "Andrew Morgan PhD meeting"
+author: "Tim Ballard"
+date: 2019-01-21
+categories: []
+tags: ["andrew morgan"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Andrew Morgan, Tim
+
+* Programming
+  * Feedback screen and instructions now programmed for different conditions
+  * Still need to program survey:
+    * Manually input participant number in qualtrics and again in experiment
+      * Pros: Easy to program
+      * Cons: Limited to lab, human error
+    * Program survey directly into experiment program
+      * Pros: No need for experimenter intervention, could be run online
+      * Cons: Potentially difficult to program?
+    * Pass participant ID from qualtrics to experiment
+      * Pros: No experimenter intervention, could still use qualtric for survey
+      * Cons: Requires server to run experiment, requires programming bit of experiment that reads URL
+    * Month of birthday, Mothers name, Name of street you lived when you were yoiung
+      * Pros: Easy to program, no experimenter intervention. Trasnferable to online.
+      * Cons: Potential misalignment. Requires participant to type input in exactly same way. Possibly some manual linking of records required.
+      
+  * Need to add question about the participants knowledge that they were up against the computer.
+  
+  * **Action: Andrew to try and see if survey can be implemented in javascript. If not, we'll use the birthday, etc method. **
+  
+  
+* Ethics: still waiting to hear back. They should meet tomorrow.  
+
+* Next meeting: 30th Jan, 1pm
+ 
+ 
+  
+

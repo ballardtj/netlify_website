@@ -1,0 +1,24 @@
+---
+title: "Reproducibility project meeting"
+author: "Tim Ballard"
+date: 2019-01-23 T21:13:14-05:00
+categories: []
+tags: ["reproducibility"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Raine, Niky, Dave, Tim
+
+* Agenda: 
+  * Talk through depth of method
+  * Talk through pitch in intro
+  
+* Pitch in intro
+  * Raine to make changed based on discussion around pitch. 
+  
+* Method
+  * Niky to cut stuff from method based on discussion.
+

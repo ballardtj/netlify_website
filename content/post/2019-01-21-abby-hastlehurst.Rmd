@@ -1,0 +1,31 @@
+---
+title: "Abby H summer scholarship meeting"
+author: "Tim Ballard"
+date: 2019-01-21
+categories: []
+tags: ["brain stimulation"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Abby Hastlehurst, Hannah Filmer, Tim
+
+*Agenda:
+  * Initial look at results from brain stimulation study
+  * Get Abby sorted for analyses that she can do on her own
+  
+*Design of study
+  * Random dot motion task
+  * 2 (stimulation area: prefrontal vs pre SMA) x 2 (stimulation type: active vs sham) x 3 (strategies)
+  * Area is between subjects, type and strategy are within
+  
+*Descriptives
+ * Strategy instructions had expected effect on RT
+ * Slightly slower in sham compared to active
+ * Ever so slightly less accurate in sham
+ 
+ 
+  
+

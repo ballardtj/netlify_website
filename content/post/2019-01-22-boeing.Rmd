@@ -1,0 +1,37 @@
+---
+title: "Boeing meeting to discuss linkage project"
+author: "Tim Ballard"
+date: 2019-01-22
+categories: []
+tags: ["boeing"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Andrew Neal, Penny Sanderson, Nathan Perry, Reece Clothier, Brendan, Tristan, Tim
+
+* Agenda: Plan steps to finalise linkage application
+ 
+* Internal deadline for linkage submission is 1 Feb. ARC submission is 3 weeks later
+  * Insitu pacific does not need to be a partner organisation. 
+    * Too complicated to have a 3rd partner.
+    * Precendent for leaving them off.
+  * Deadline should be doable if we're happy with the project as currently scoped.
+    * Reece and Nathan happy with project.
+
+* Next steps
+  * Get info from insitu pacific on test conditions, in kind support (Nathan)
+  * Provide CVs to Penny (all)
+  * Make sure publications are attached to ORCID (possibly not essential)
+  * Editing project description (all)
+  * Update RMS profiles (all)
+  * Penny's staff member to help us with admin
+  * Budget (Andrew)
+  * Identify the background IP that's coming from each party.
+    * Not required for application, but good to think about sooner rather than later
+  * Complete section where Andrew has specifically asked for input.
+  
+  
+

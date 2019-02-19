@@ -1,0 +1,31 @@
+---
+title: "Discounting recovery project meeting"
+author: "Tim Ballard"
+date: 2019-01-29 T21:13:14-05:00
+categories: []
+tags: ["discounting recovery"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Ash, Manos, Tim
+
+* Manos in Australia from 1st to 26th (?) of April. Organise visit?
+
+* Where are we at with the project?
+
+  * Fitted Manos data using hierarchical Bayesian using 11 models
+  * For each model, randomly sampled 100 parameters from participant-level distributions
+  * For each sampled parameter, simulated 100 ficticious participants and fit a person-level model     to each group of participants (we did this for each model).
+  
+* Next steps
+
+  * Tim to start tex document on overleaf.
+  * Manos to ask for Junyi's data.
+  * Ash to check whether we can use Graham's data.
+  * When we get data, Tim to send Manos code for running analysis on cluster.
+  * Tim to, before next meeting, summarize results of first recovery analysis.
+  
+
