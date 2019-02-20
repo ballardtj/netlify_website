@@ -1,0 +1,30 @@
+---
+title: "Discounting recovery project meeting"
+author: "Tim Ballard"
+date: 2019-02-19 T21:13:14-05:00
+categories: []
+tags: ["discounting recovery"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Ash, Manos, Tim
+
+* Manos in Australia from 1st to 26th (?) of April. Organise visit?
+
+* Questions for discussion:
+  * Do we need to run an assymptotic recovery? Possibly, but the main analysis would focus on the actual designs. Could just note that results hold in assymptotic recovery.
+  * Calculate correciton between generated and recovered parameters.
+  * Check whether parameters vary across datasets? If so, use some sort of crossvalidation to test the correspondance of parameters across datasets.
+  * Keep narrative simple.
+
+* Next steps
+
+  * Manos to get Junyi's data.
+  * Tim to plot fits of all models on one figure. Will be messy, but should go in the paper (alpha data points).
+  * Tim to tidy-up recovery results. 
+  * When we get data, Tim to send Manos code for running analysis on cluster.
+ 
+
