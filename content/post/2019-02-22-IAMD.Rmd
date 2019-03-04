@@ -1,0 +1,42 @@
+---
+title: "IAMD Meeting"
+author: "Tim Ballard"
+date: 2019-02-22 T21:13:14-05:00
+categories: []
+tags: ["IAMD"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+Attendees: Andrew, Hector, Tim, Simon, Kingsley, Susan
+
+# Hector update on modelling
+* Code now handles multiple threats coming in over time, as well as potentiall more goals and platforms.
+* Allows us to scale up model to more complex environments
+* Shiny App - intuitive way to simulate the model
+  * Kingsley: No problem that the MGPM R code for the IAMD scenario is up and the web
+  * Kingsley initial feedback is that app is useful.
+    * Possible to edit code directly (and temporarily) from the website.
+    * Also possible to run this on a local version of RStudio.
+  * Other feedback
+    * Make live feed of what's happening in scenario over time, rather than static image?
+    * Would be nice to be able to upload our own scenarios.
+    * Useful to check the simplest possible scenario (1 platform, 1 threat) to assess whether the model is behaving sensibly.
+    
+* Next steps:
+    * Strip back to single platform, single threat scenario.
+    * Expand plotting on app so every variable is plotted and can see individual lines.
+    * Step through the scenario making sure everything makes sense.
+    
+# Simon's work on distributed control
+* Two ways to break distributed control:
+    * Platforms fire too much and use more resources.
+    * Both platforms fire on one threat and ignore other threat.
+* How do platforms develop expectancies as to whether other threats will handle the threat?
+* Behavior of distributed system likely depends on what information can be shared.
+* Potential to use reinforcement learning models to identify optimal decision policies.
+ 
+ 
+ 

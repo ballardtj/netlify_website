@@ -1,0 +1,30 @@
+---
+title: "Reproducibility project meeting"
+author: "Tim Ballard"
+date: 2019-02-20 T21:13:14-05:00
+categories: []
+tags: ["reproducibility"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Niky to start writing descriptive section of the results
+
+* Tim to simulate data and code up analysis
+
+* Raine to continue work on intro
+
+* Structure:
+  * Overview
+  * Why confidence is important:
+    * Facilitates cumulative development of science
+    * Practical - increases extent to which poeple buy into the practices
+  * How confidence is assessed:
+    * Historically, journal quality, esteem of researchers involves
+    * More recently, open science practices...
+    * Other researchers have pointed to statistical issues.
+  * Aims
+
+

@@ -1,0 +1,30 @@
+---
+title: "DDAP Lab meeting"
+author: "Tim Ballard"
+date: 2019-02-20
+categories: []
+tags: ["andrew morgan"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+* Attendees: Andrew Morgan, Andrew Neal, Hector, Erin, Tim
+
+* Hector
+  * IAMD model update
+    * Preliminary code up of MGPM in shiny app.
+    * Next step to incorporate dynamic preference accumulation graphs.
+    
+* Andrew Morgan
+  * Ethics accepted!
+  * Feedback on display for experiment.
+    * Opponent line to be red.
+    * User vs opponent lines closer together
+    * Fixed increments for progress bar. 
+    
+ * We didn't have time to discuss documents in great detail. But Erin and Andrew to send design docs to Hector for initial read.
+ 
+  
+
